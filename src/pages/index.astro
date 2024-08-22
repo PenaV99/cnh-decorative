@@ -1,5 +1,6 @@
 ---
-
+import { ACTION_ERROR_CODES } from 'astro:actions';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -8,9 +9,67 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>CNH Construction</title>
+
+		<style>
+			
+		</style>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<div class="hamburger-menu" id="hamburger-menu">
+				<div class="ham-bar bar-top"></div>
+				<div class="ham-bar bar-mid"></div>
+				<div class="ham-bar bar-bottom"></div>
+			</div>
+			<nav class="nav-bar" id="nav-bar">
+				<a href="#" class="business-name nav-items">
+					<h1>Decorative</h1>
+					<img src="cnh-dc-logo.png" alt="cnh logo" class="logo-img">
+					<h1>Concrete</h1>
+				</a>	
+				<ul class="nav-list">
+					<li class="nav-items">
+						<a href="/services/">
+						Services
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="/about/">
+						About
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="/contact/">
+						Contact
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="/gallery/">
+						Gallery
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="contact-cta">
+				<h2 class="call-now-cta">Call Today</h2>
+				<h2><a href="https://example.com/">(214) 661-0781</a></h2>
+				<h2 class="call-now-cta">Email Us</h2>
+				<h3 class="call-now-cta">cnhdecorative@gmail.com</h3>
+			</div>
+			<h2>Out with the old, in with the new</h2>
+			<h1>Revitalizing surfaces with concrete solutions</h1>
+		</main>
+		<footer>
+		
+		</footer>
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
