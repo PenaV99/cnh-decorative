@@ -12,7 +12,14 @@ import '../styles/global.css';
 		<title>CNH Construction</title>
 
 		<style>
-			
+		.image-container {
+			background-image: url("hero-image.jpg");
+			width: 100%;
+			height: 30em;
+			background-position: right;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 		</style>
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +27,7 @@ import '../styles/global.css';
 	</head>
 	<body>
 		<header>
+			<h1 class="title">CNH Decorative Concrete</h1>
 			<div class="hamburger-menu" id="hamburger-menu">
 				<div class="ham-bar bar-top"></div>
 				<div class="ham-bar bar-mid"></div>
@@ -30,10 +38,10 @@ import '../styles/global.css';
 					<h1>Decorative</h1>
 					<img src="cnh-dc-logo.png" alt="cnh logo" class="logo-img">
 					<h1>Concrete</h1>
-				</a>	
+				</a>
 				<ul class="nav-list">
 					<li class="nav-items">
-						<a href="#">
+						<a href="/">
 						Home
 						</a>
 					</li>
@@ -61,14 +69,20 @@ import '../styles/global.css';
 			</nav>
 		</header>
 		<main>
+			<section class="hero" id="home-hero">
+				<h3>
+					<a href="https://example.com/">Call Today (214) 661-0781</a>
+				</h3>
+				<div class="image-container">
+				</div>
+				<h1>Revitalizing surfaces with concrete solutions</h1>
+			</section>
 			<div class="contact-cta">
-				<h2 class="call-now-cta">Call Today</h2>
-				<h2><a href="https://example.com/">(214) 661-0781</a></h2>
+				<!-- <h2 class="call-now-cta"></h2> -->
 				<h2 class="call-now-cta">Email Us</h2>
 				<h3 class="call-now-cta">cnhdecorative@gmail.com</h3>
 			</div>
 			<h2>Out with the old, in with the new</h2>
-			<h1>Revitalizing surfaces with concrete solutions</h1>
 		</main>
 		<footer>
 		
