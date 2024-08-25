@@ -58,7 +58,7 @@ fieldset {
 
                                 /* GLobal Styles */
 :root {
-    --ff-primary:"Exo 2", sans-serif;
+    --ff-primary:"Orbitron", sans-serif;
     --ff-secondary: ;
 
     --fw-reg: 400;
@@ -66,9 +66,8 @@ fieldset {
 
     --clr-background: #;
     --clr-light: #fff;
-    --clr-dark: #220901;
-    --clr-accent: #001d3d;
-    /* --clr-accent: #bf0603; */
+    --clr-dark: #252422;
+    --clr-accent: #403d39;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.50rem;
@@ -89,9 +88,11 @@ html {
 body {
     font-size: var(--fs-body);
     font-family: var(--ff-primary);
+    background-color: #fffcf2;
     max-width: 100vw;
     text-align: center;
-    color: var(--clr-accent);
+    color: var(--clr-dark);
+    /* border: .5rem solid var(--clr-light); */
 }
 h1 {
     font-size: var(--fs-h1);
@@ -99,6 +100,7 @@ h1 {
 }
 h2 {
     font-size: var(--fs-h2);
+    font-weight: var(--fs-bold);
 }
 h3 {
     font-size: var(--fs-h3);
@@ -111,15 +113,16 @@ header {
     width: 100%;
     max-width: 100vw;
     background-color: var(--clr-background);
-    border-bottom: 2px solid var(--clr-accent);
-    align-items: center;
-    justify-content: space-evenly;
+    border-bottom: .3rem solid var(--clr-accent);
+    align-items: start;
+    justify-content: end;
 }
+
 
                                             /* SITE WIDE STYLES */
 
 .title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
 }
 .nav-bar {
@@ -128,7 +131,6 @@ header {
 .nav-bar.active {
     display: flex;
     flex-direction: column;
-    background-color: var(--clr-light);
     align-items: center;
     justify-content: space-around;
     right: 0;
@@ -138,13 +140,16 @@ header {
     height: 70vh;
     width: 100%;
     z-index: 22;
+    background-color: #fff;
+    border-bottom: 1.3rem solid var(--clr-accent);
 }
 .nav-list {
-    font-size: var(--fs-h3);
     display: flex;
     width: 100vw;
     justify-content: space-around;
     flex-direction: column;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);    
 }
 .nav-items {
     width: 100%;

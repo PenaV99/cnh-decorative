@@ -13,31 +13,35 @@ import '../styles/global.css';
 
 		<style>
 		.image-container {
-			background-image: url(hero-image.jpg);
+			background-image: url("/hero-image1.jpg");
 			width: 100%;
-			height: 30em;
-			background-position: right;
+			height: 25em;
+			background-position: bottom;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		.hero {
+			border-bottom: .3rem solid var(--clr-accent);
+		}
 		</style>
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header>
-			<h1 class="title">CNH Decorative Concrete</h1>
+			<h1 class="title">
+				CNH Decorative Concrete 
+			</h1>
 			<div class="hamburger-menu" id="hamburger-menu">
 				<div class="ham-bar bar-top"></div>
 				<div class="ham-bar bar-mid"></div>
 				<div class="ham-bar bar-bottom"></div>
 			</div>
+		</header>
 			<nav class="nav-bar" id="nav-bar">
 				<a href="#" class="business-name nav-items">
-					<h1>Decorative</h1>
 					<img src="cnh-dc-logo.png" alt="cnh logo" class="logo-img">
-					<h1>Concrete</h1>
 				</a>
 				<ul class="nav-list">
 					<li class="nav-items">
@@ -66,23 +70,18 @@ import '../styles/global.css';
 						</a>
 					</li>
 				</ul>
+				<div class="contact-cta">
+					<h2 class="call-now-cta">Contact Us</h2>
+					<h3><a href="https://example.com/">(214) 661-0781</a></h3>
+					<h3 class="call-now-cta">cnhdecorative@gmail.com</h3>
+				</div>
 			</nav>
-		</header>
 		<main>
 			<section class="hero" id="home-hero">
-				<h3>
-					<a href="https://example.com/">Call Today (214) 661-0781</a>
-				</h3>
 				<div class="image-container">
 				</div>
-				<h1>Revitalizing surfaces with concrete solutions</h1>
+				<h1>Revitalizing Surfaces with Concrete Solutions</h1>
 			</section>
-			<div class="contact-cta">
-				<!-- <h2 class="call-now-cta"></h2> -->
-				<h2 class="call-now-cta">Email Us</h2>
-				<h3 class="call-now-cta">cnhdecorative@gmail.com</h3>
-			</div>
-			<h2>Out with the old, in with the new</h2>
 		</main>
 		<footer>
 		
