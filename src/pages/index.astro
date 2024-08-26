@@ -17,7 +17,7 @@ import Footer from '../components/Footer.astro';
 		<Typography />
 		<style>
 			.image-container {
-				background-image: url("/hero-image1.jpg");
+				background-image: url("/hero.jpg");
 				width: 100%;
 				height: 25em;
 				background-position: bottom;
@@ -30,7 +30,7 @@ import Footer from '../components/Footer.astro';
 			.brand-intro {
 				color: var(--clr-light);
 			}
-			.about-us-img {
+			.brand-img {
 				width: 100%;
 				height: 20em;
 				object-fit: cover;
@@ -56,19 +56,29 @@ import Footer from '../components/Footer.astro';
 					<div class="about-us-el">
 						<h1>About Us</h1>
 						<p>
-							CNH Decorative Concrete is a leading provider of decorative concrete solutions in Arlington, TX. With 10+ years of experience and a commitment to quality, we've earned a reputation for excellence in the DFW and surrounding areas.
+							CNH Decorative Concrete is a leading provider of decorative concrete solutions in Arlington, TX.
 						</p>
 						<img
-						 src="/arlington-globe-life.jpg" alt="Arlington Texas Rangers Stadium" class="about-us-img"
+						 src="/arlington-globe-life.jpg" alt="Arlington Texas Rangers Stadium" class="brand-img"
 						 >
+						 <p>
+							With 10+ years of experience and a commitment to quality, we've earned a reputation for excellence in the DFW and surrounding areas.
+						 </p>
 					</div>
-					<h1>Transform Surfaces</h1>
-					<p>
-						We specialize in transforming concrete surfaces with a range of innovative treatments. Our services include epoxy flooring installation, floor coating removal, sealed concrete, polyurea joint filler, concrete staining, and concrete polishing.
-					</p>
+					<div class="specialization-el">
+						<h1>Transform Surfaces</h1>
+						<img src="/epoxy-floor.jpg" alt="Men polishing floor" class="brand-img">
+						<p>
+							We specialize in transforming concrete surfaces with a range of innovative treatments. Our services include epoxy flooring installation, floor coating removal, sealed concrete, polyurea joint filler, concrete staining, and concrete polishing.
+						</p>
+					</div>
 					<h1>Our Mission</h1>
 					<p>
-						At CNH, we're committed to delivering top-quality decorative concrete solutions at competitive prices. Our dedication to customer satisfaction has been the cornerstone of our success. Contact us today to learn more about our stained and polished concrete options, as well as our other comprehensive services.
+						At CNH, we're committed to delivering top-quality decorative concrete solutions at competitive prices. 
+					</p>
+					<img src="sanding-epoxy.jpg" alt="Young man sanding epoxy" class="brand-img">
+					<p>
+						Our dedication to customer satisfaction has been the cornerstone of our success. Contact us today to learn more about our stained and polished concrete options, as well as our other comprehensive services.
 					</p>
 				</div>
 			</section>
