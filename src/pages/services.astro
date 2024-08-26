@@ -1,12 +1,28 @@
-<!DOCTYPE html>
+---
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import Typography from '../components/Typography.astro';
+import '../styles/global.css';
+---
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content={Astro.generator} />
+    <Typography />
     <title>Services</title>
 </head>
 <body>
-    <h1>Here are our services</h1>
-    
+    <header>
+        <Header />
+    </header>
+    <nav class="nav-bar" id="nav-bar">
+    <Navigation />
+    </nav>
+        <h1>Commercial | Residential</h1>
+    <script>
+        import "../scripts/menu.js";
+    </script>
 </body>
 </html>
