@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Typography from '../components/Typography.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 ---
 <!DOCTYPE html> 
@@ -12,6 +13,14 @@ import '../styles/global.css';
     <meta name="generator" content={Astro.generator} />
     <Typography />
     <title>Services</title>
+    <style>
+        img {
+            width: 90%;
+            height: 14em;
+            border: 1px solid red;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +29,15 @@ import '../styles/global.css';
     <nav class="nav-bar" id="nav-bar">
     <Navigation />
     </nav>
-        <h1>Commercial | Residential</h1>
+        <h1>Commercial & Residential</h1>
+        <div class="services-display">
+            <img src="/washing-floor.png" alt="Washing floor">
+            <img src="/no-concrete2.png" alt="Scraping floor">
+            <img src="/floor-scrubbing.png" alt="Polishing Floor">
+        </div>
+        <footer>
+            <Footer />
+        </footer>
     <script>
         import "../scripts/menu.js";
     </script>

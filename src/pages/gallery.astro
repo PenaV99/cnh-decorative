@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Typography from '../components/Typography.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 ---
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ import '../styles/global.css';
     <title>Gallery</title>
     <style>
         img {
-            width: 17em;
+            width: 90%;
             height: 14em;
             border: 1px solid red;
             object-fit: cover;
@@ -28,14 +29,29 @@ import '../styles/global.css';
     <nav class="nav-bar" id="nav-bar">
         <Navigation />
     </nav>
-    <h1>Here's some of our work</h1>
+    <h1>In with the new </h1>
     <section class="gallery">
         <div class="gallery-el">
-            <img src="/barcounter-after3.png" alt="shiny bar counter">
-            <img src="/aztec-machine-wash.png" alt="washing floor">
-            <img src="/black-granite-gray.png" alt="black granite">
+            <div class="after">
+                <img src="/barcounter-after3.png" alt="shiny bar counter">
+                <img src="/black-granite-gray.png" alt="black granite">
+                <img src="/stairs-shiny.png" alt="shiny stairs">
+                <img src="/corner-room-concrete.png" alt="corner room">
+                <img src="/dhc-job.png" alt="Dave's Hot Chicken">
+                <img src="/gray-concrete.png" alt="gray concrete">
+                <img src="/warehouse-concrete2.png" alt="warehouse">
+                <img src="/aztec-machine-wash.png" alt="washing floor">
+            </div>
+            <h1>
+                Out with the old
+            </h1>
+            <div class="before">
+            </div>
         </div>
     </section>
+    <footer>
+        <Footer />
+    </footer>
     <script>
         import "../scripts/menu.js";
     </script>
