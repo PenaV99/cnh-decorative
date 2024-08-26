@@ -59,7 +59,7 @@ fieldset {
                                 /* GLobal Styles */
 :root {
     --ff-primary:"Orbitron", sans-serif;
-    --ff-secondary: ;
+    --ff-secondary:"DM Sans", sans-serif ;
 
     --fw-reg: 400;
     --fw-bold: 800;
@@ -107,11 +107,14 @@ h3 {
     font-weight: var(--fw-bold);
 }
 p {
-    font-family: sans-serif;
+    font-family: var(--ff-secondary);
     font-size: 1.4rem;
     text-align: left;
     margin: .5em;
     font-weight: 600;
+}
+button {
+    font-family: var(--ff-secondary);
 }
 
                                             /* SITE WIDE STYLES */
@@ -177,13 +180,13 @@ header {
     width: 3.125em;
     position: relative;
     cursor: pointer;
-    padding: 1.5rem;
+    padding: 1.6rem;
     border-radius: 10px;
     align-self: end;
 }
-.hamburger-menu:hover {
-    border: 1px solid blue;
-}
+/* .hamburger-menu:hover {
+    opacity: 95%;
+} */
 .ham-bar {
     width: 70%;
     height: 0.25em;
