@@ -11,6 +11,15 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Typography />
     <title>Gallery</title>
+    <style>
+        img {
+            width: 17em;
+            height: 14em;
+            border: 1px solid red;
+            object-fit: cover;
+
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,6 +29,13 @@ import '../styles/global.css';
         <Navigation />
     </nav>
     <h1>Here's some of our work</h1>
+    <section class="gallery">
+        <div class="gallery-el">
+            <img src="/barcounter-after3.png" alt="shiny bar counter">
+            <img src="/aztec-machine-wash.png" alt="washing floor">
+            <img src="/black-granite-gray.png" alt="black granite">
+        </div>
+    </section>
     <script>
         import "../scripts/menu.js";
     </script>

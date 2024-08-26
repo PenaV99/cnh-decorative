@@ -106,6 +106,9 @@ h3 {
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
 }
+p {
+    font-family: sans-serif;
+}
 
                                             /* SITE WIDE STYLES */
 
@@ -208,3 +211,7 @@ header {
     transform: translate(-50%, -50%) rotate(-225deg);
     top: 50%;
 }
+footer {
+    border-top: .3rem solid var(--clr-accent);
+}
+.
