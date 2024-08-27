@@ -118,7 +118,7 @@ p {
 
                                             /* SITE WIDE STYLES */
 
-header {
+.header {
     display: flex;
     margin: .2em 0;
     width: 100%;
@@ -225,7 +225,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    header  {
+   .header  {
         justify-content: space-between;
     }
 }
