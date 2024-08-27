@@ -68,7 +68,7 @@ fieldset {
     --clr-light: #F5F3F4;
     --clr-dark: #011627;
     --clr-accent: #ff0022;
-    --clr-highlight: #bc4749;
+    --clr-highlight: #ad2831;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -136,6 +136,7 @@ p {
     font-size: 1.3rem;
     padding: 0 1.1em;
     text-transform: uppercase;
+    text-shadow: 0px 0px 1px var(--clr-accent);
 }
 .nav-bar {
     display: none;
@@ -154,7 +155,7 @@ p {
     width: 75%;
     background-color: #fff;
     color: var(--clr-background);
-    border-bottom: 1rem solid var(--clr-accent);
+    /* border-bottom: 1rem solid var(--clr-accent); */
     z-index: 19;
 }
 .logo-img {
@@ -225,7 +226,11 @@ p {
     background-color: var(--clr-accent);
 }
 footer {
+    background: linear-gradient(var(--clr-background),var(--clr-background),var(--clr-background) red);
     border-top: .3rem solid var(--clr-accent);
+}
+.footer-logo {
+    width: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -237,4 +242,7 @@ footer {
                                         /* UTILITY CLASSES */
 .highlight {
     color: var(--clr-highlight);
+}
+.text-shadow {
+    text-shadow: 0px 0px 1px var(--clr-accent);
 }
