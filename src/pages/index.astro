@@ -25,6 +25,25 @@ import Icons from '../components/Icons.astro';
 				background-repeat: no-repeat;
 				background-size:cover;
 			}
+			.schedule-cta {
+				margin: .3em auto;
+				font-size: var(--fs-h1);
+				font-family: var(--ff-secondary);	
+				font-weight: 800;
+				border: 2px solid var(--clr-light);
+				border-radius: 6px;
+				padding: .3em;
+			}
+			.contact-sect {
+				font-weight: var(--fw-bold);
+				margin: .5em 0 2em;
+			}
+			.contact-cta {
+				margin-top: 1rem;
+			}
+			.brand-section h1 {
+				color: var(--clr-highlight);
+			}
 			.brand-intro {
 				color: var(--clr-light);
 			}
@@ -33,20 +52,8 @@ import Icons from '../components/Icons.astro';
 				height: 20em;
 				object-fit: cover;
 				margin: 0 auto;
-				/* box-shadow: 0px 0px 1px #fff; */
+				box-shadow: 0px 0px 0px #fff;
 				padding: .3em;
-			}
-			.schedule-cta {
-				margin: .3em auto;
-				font-size: var(--fs-h1);
-				font-family: var(--ff-secondary);	
-				font-weight: 800;
-				border: 2px solid var(--clr-light);
-				border-radius: 6px;
-				padding: .3em 0;
-			}
-			.contact-cta {
-				font-weight: var(--fw-bold);
 			}
 			</style>
 	</head>
@@ -61,12 +68,12 @@ import Icons from '../components/Icons.astro';
 		<section class="hero" id="home-hero">
 				<div class="image-container">
 				</div>
-				<h1>Concrete Solutions,
-					<span class="highlight"> Tailored to Your Vision.</span>
+				<h1>Concrete Solutions
+					<span class="highlight">Shaped to Your Needs.
+					</span>
 				</h1>
 			</section>
 			<section class="contact-sect">
-				<div class="contact-cta">
 					<button class="schedule-cta">
 						<a href="tel:+2146610781">
 							<i class="fa-solid fa-calendar-days" 
@@ -75,15 +82,16 @@ import Icons from '../components/Icons.astro';
 							Schedule a Consultation
 						</a>
 					</button>
+				<div class="contact-cta">
 					<h3>
 						<a href="tel:+12146610781">
 							<i class="fa-solid fa-phone" style="color: var(--clr-light);"></i>
 							(214) 661-0781
 						</a>
 					</h3>
-					<h3>
+					<h4>
 						<a href="mailto:cnhdecorative@gmail.com" target="_blank">cnhdecorative@gmail.com</a>
-					</h3>
+					</h4>
 				</div>
 			</section>
 			<section class="brand-section">

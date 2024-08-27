@@ -68,11 +68,12 @@ fieldset {
     --clr-light: #F5F3F4;
     --clr-dark: #011627;
     --clr-accent: #ff0022;
-    --clr-highlight: #00b9ae;
+    --clr-highlight: #bc4749;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.50rem;
+    --fs-h3: 1.7rem;
+    --fs-h4: 1.45rem;
     --fs-body: 1rem;
 }
 
@@ -108,6 +109,9 @@ h3 {
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
 }
+h4 {
+    font-size: var(--fs-h4);
+}
 p {
     font-family: var(--ff-secondary);
     font-size: 1.5rem;
@@ -120,7 +124,7 @@ p {
 
 .header {
     display: flex;
-    margin: .2em 0;
+    margin: .2em 0 0;
     width: 100%;
     max-width: 100vw;
     background-color: var(--clr-background);
@@ -166,7 +170,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     margin: 1em auto;
 }
