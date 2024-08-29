@@ -5,7 +5,7 @@ import Typography from '../components/Typography.astro';
 import Footer from '../components/Footer.astro';
 import Icons from '../components/Icons.astro';
 import '../styles/global.css';
-const caseStudies = ["New Bar Top","New Concrete Floor"]
+const caseStudies = ["Bar Countertop","Concrete Floor","& More"]
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -16,40 +16,37 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
     <Icons />
     <title>Gallery</title>
     <style>
-        img {
-            box-shadow: 0px 0px 1px #fff;
-            flex-basis: 49%;
-            flex-shrink: 1;
-            flex-grow: 0;
-            height: 8em;
-            margin: 0 auto .2em;
-            border-radius: .3em;
-            object-fit: fill;
-        }
-        .showcase-section {
+         .showcase-section {
             padding: .5em;
-            display: flex;
-            flex-direction: column;
+            /* display: flex; */
+            /* flex-direction: column; */
             justify-content: space-around;
-
+            width: 100%;
         }
         .showcase-heading {
             font-family: var(--ff-secondary);
             text-transform: capitalize;
         }
         .showcase__bar-top, .showcase__scraped-floor, .showcase__extra {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: end;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: .5em;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
             max-width: 100%;
         }
-        .bottom-image {
-            flex-basis: 100%;
-            flex-grow: 1;
-            height: 12em;
-            max-width: 100%;
+        .showcase__extra {
+            grid-template-rows: auto auto auto;
+        }
+        img {
+            width: 45vw;
+            height: 15em;
             object-fit: cover;
+        }
+        .showcase-images {
+
         }
     </style>
 </head>
@@ -68,27 +65,30 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
                     {caseStudies[0]}
             </h2>
             <div class="showcase__bar-top">
-                <img src="/barcounter-before.png" alt="" class="before-image">
-                <img src="/barcounter-before2.png" alt="" class="before-image">
-                <img src="/barcounter-after3.png" alt="" class="bottom-image">
+                <div class="showcase-images"><img src="/barcounter-before.png" alt=""></div>
+                <div class="showcase-images"><img src="/barcounter-before2.png" alt=""></div>
+                <div class="showcase-images"><img src="/barcounter-after2.png" alt=""></div>
+                <div class="showcase-images"><img src="/barcounter-after-right.png" alt=""></div>
             </div>
             <h2 class="showcase-heading">
                     {caseStudies[1]}
             </h2>
             <div class="showcase__scraped-floor">
-                <img src="/scraped-floor.png" alt="" class="before-image">
-                <img src="/scraped-floor2.png" alt="" class="before-image">
-                <img src="/scraped-floor-after4.png" alt="">
-                <img src="/scraped-floor-after.png" alt="">
+                <div class="showcase-images"><img src="/scraped-floor.png" alt=""></div>
+                <div class="showcase-images"><img src="/scraped-floor2.png" alt=""></div>
+                <div class="showcase-images"><img src="/scraped-floor-after4.png" alt=""></div>
+                <div class="showcase-images"><img src="/scraped-floor-after.png" alt=""></div>
             </div>
             <h2 class="showcase-heading">
-                More Shiny Surfaces
+                {caseStudies[2]}
             </h2>
             <div class="showcase__extra">
-                <img src="/corner-room-concrete.png" alt="" class="extra-image">
-                <img src="/black-granite-gray.png" alt="" class="extra-image">
-                <img src="/dhc-job.png" alt="" class="extra-image">
-                <img src="/gray-concrete.png" alt="" class="extra-image">
+                <div class="showcase-images"><img src="/corner-room-concrete.png" alt=""></div>
+                <div class="showcase-images"><img src="/black-granite-gray.png" alt="" ></div>
+                <div class="showcase-images"><img src="/dhc-job.png" alt=""></div>
+                <div class="showcase-images"><img src="/gray-concrete.png" alt=""></div>
+                <div class="showcase-images"><img src="/warehouse-concrete2.png" alt="" ></div>
+                <div class="showcase-images"><img src="/stairs-shiny.png" alt="" ></div>
             </div>
         </div>
     </section>
