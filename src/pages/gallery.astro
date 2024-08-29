@@ -18,9 +18,11 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
     <style>
         img {
             box-shadow: 0px 0px 1px #fff;
-            flex-basis: 48%;
+            flex-basis: 49%;
+            flex-shrink: 1;
+            flex-grow: 0;
             height: 8em;
-            margin: .5em auto;
+            margin: 0 auto .2em;
             border-radius: .3em;
             object-fit: fill;
         }
@@ -29,6 +31,7 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
         }
         .showcase-heading {
             font-family: var(--ff-secondary);
@@ -37,15 +40,16 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
         .showcase__bar-top, .showcase__scraped-floor, .showcase__extra {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: end;
+            max-width: 100%;
         }
         .bottom-image {
             flex-basis: 100%;
+            flex-grow: 1;
             height: 12em;
             max-width: 100%;
             object-fit: cover;
-        }
-        .extra-image {
-            flex: 1;
         }
     </style>
 </head>
@@ -56,7 +60,7 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
     <nav class="nav-bar" id="nav-bar">
         <Navigation />
     </nav>
-    <h1>Here's a glimpse into our shiny portfolio</h1>
+    <h1>Surfaces we've revitalized</h1>
 
     <section class="showcase-section">
         <div class="showcase">
@@ -84,6 +88,7 @@ const caseStudies = ["New Bar Top","New Concrete Floor"]
                 <img src="/corner-room-concrete.png" alt="" class="extra-image">
                 <img src="/black-granite-gray.png" alt="" class="extra-image">
                 <img src="/dhc-job.png" alt="" class="extra-image">
+                <img src="/gray-concrete.png" alt="" class="extra-image">
             </div>
         </div>
     </section>
