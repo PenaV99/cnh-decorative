@@ -6,6 +6,7 @@ import Navigation from '../components/Navigation.astro';
 import Typography from '../components/Typography.astro';
 import Footer from '../components/Footer.astro';
 import Icons from '../components/Icons.astro';
+const services = ["Epoxy Flooring Installation", "Floor Coating Removal", "Sealed Concrete", "Polyurea Joint Filler", "Concrete Staining", "Concrete Polishing"]
 ---
 
 <html lang="en">
@@ -36,16 +37,19 @@ import Icons from '../components/Icons.astro';
 			}
 			.contact-sect {
 				font-weight: var(--fw-bold);
-				margin: .5em 0 2em;
+				margin: .5em 0 2em;;
 			}
 			.contact-cta {
 				margin-top: 1rem;
 			}
 			.brand-section h1 {
 				color: var(--clr-highlight);
+				text-align: center;
 			}
 			.brand-intro {
+				border-top: 1px solid var(--clr-light);
 				color: var(--clr-light);
+				text-align: left;
 			}
 			.brand-img {
 				width: 100%;
@@ -55,6 +59,28 @@ import Icons from '../components/Icons.astro';
 				box-shadow: 0px 0px 0px #fff;
 				padding: .3em;
 			}
+			.link {
+				color: var(--clr-highlight);
+				text-decoration: underline;
+				display: block;
+				text-align: center;
+				margin: .2em auto;
+			}
+			.service {
+				font-size: var(--fs-h4);
+				text-align: left;
+				font-weight: 600;
+				padding: .3em
+       		}
+       		 .custom {
+            	color: #52b788;
+       		 }
+			.specialization-el {
+				border-top: 1px solid var(--clr-light);
+			}
+			 .mission-el {
+				border-top:1px solid var(--clr-light) ;
+			 }
 			</style>
 	</head>
 	<body>
@@ -99,22 +125,45 @@ import Icons from '../components/Icons.astro';
 					<div class="about-us-el">
 						<h1>About Us</h1>
 						<p>
-							CNH Decorative Concrete is a leading provider of decorative concrete solutions in Arlington, TX.
+							CNH Decorative Concrete is a leading provider of decorative concrete solutions based in Arlington, TX.
 						</p>
 						<img
 						 src="/arlington-globe-life.jpg" alt="Arlington Texas Rangers Stadium" class="brand-img"
 						 >
+						 <h3><a href="/about/" class="link">With 10+ years of experience</a></h3>
 						 <p>
-							With 10+ years of experience and a commitment to quality, we've earned a reputation for excellence in the DFW and surrounding areas.
+							and a commitment to quality, we've earned a reputation for excellence in the DFW and surrounding areas.
 						 </p>
 					</div>
 					<div class="specialization-el">
 						<h1>Transform Surfaces</h1>
+						<p>We specialize in transforming concrete surfaces with a range of innovative treatments.</p>
 						<img src="/epoxy-floor.jpg" alt="Men polishing floor" class="brand-img">
-						<p>
-							We specialize in transforming concrete surfaces with a range of innovative treatments. Our services include epoxy flooring installation, floor coating removal, sealed concrete, polyurea joint filler, concrete staining, and concrete polishing.
-						</p>
+						<h3>
+							<a href="/services/" class="link">Our services include</a>
+						</h3>
+						<ul class="services-list">
+							<li class="service">
+								<i class="fa-solid fa-check-square custom"></i> 
+								{services[0]}</li>
+							<li class="service">
+								<i class="fa-solid fa-check-square custom"></i> 
+								{services[1]}</li>
+							<li class="service">
+								<i class="fa-solid fa-check-square custom"></i> 
+								{services[2]}</li>
+							<li class="service">
+								<i class="fa-solid fa-check-square custom"></i> 
+								{services[3]}</li>
+							<li class="service">
+								<i class="fa-solid fa-check-square custom"></i> 
+								{services[4]}</li>
+							<li class="service">
+								<i class="fa-solid fa-check-square custom"></i> 
+								{services[5]}</li>
+						</ul>
 					</div>
+					<div class="mission-el">
 					<h1>Our Mission</h1>
 					<p>
 						At CNH, we're committed to delivering top-quality decorative concrete solutions at competitive prices. 
@@ -123,6 +172,7 @@ import Icons from '../components/Icons.astro';
 					<p>
 						Our dedication to customer satisfaction has been the cornerstone of our success. Contact us today to learn more about our stained and polished concrete options, as well as our other comprehensive services.
 					</p>
+				</div>
 				</div>
 			</section>
 		</main>
