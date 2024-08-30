@@ -157,6 +157,8 @@ p {
     color: var(--clr-background);
     border-bottom: 1rem solid var(--clr-accent);
     z-index: 19;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .logo-img {
     margin-top: 4em;
@@ -188,9 +190,6 @@ p {
     border-radius: 10px;
     align-self: end;
 }
-/* .hamburger-menu:hover {
-    opacity: 95%;
-} */
 .ham-bar {
     width: 70%;
     height: 0.25em;

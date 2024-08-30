@@ -5,6 +5,7 @@ const navLinks = document.querySelectorAll('.nav-items')
 hamburgerMenu.addEventListener('click', function() {
     navBar.classList.toggle('active')
     hamburgerMenu.classList.toggle('active')
+    
 })
 
   for (let link of navLinks) {
