@@ -18,13 +18,46 @@ const services = ["Epoxy Flooring Installation", "Floor Coating Removal", "Seale
 		<Typography />
 		<Icons />
 		<style>
+			.hero {
+				display: flex;
+				flex-flow: column wrap;
+			}
 			.image-container {
 				background-image: url("/hero.jpg");
-				width: 100%;
-				height: 25em;
 				background-position: bottom;
 				background-repeat: no-repeat;
 				background-size:cover;
+				max-width: 100%;
+				height: 25em;
+			}
+
+			@media (min-width: 1024px) {
+				.hero {
+					flex-wrap: wrap;
+					flex-direction: column;
+					background-image: url("/hero.jpg");
+					background-position: top;
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+				.image-container {
+					width: 50%;
+					order: 1;
+					opacity: 0%;
+				}
+				.tagline {
+					order: 3;
+				}
+				.schedule-cta {
+					order: 4;
+				}
+				.contact-cta {
+					background-color: var(--clr-dark);
+					order: 0;
+					display: flex;
+					justify-content: space-around;
+					padding: 0 1em;
+				}
 			}
 			.contact-sect {
 				font-weight: var(--fw-bold);
@@ -42,7 +75,7 @@ const services = ["Epoxy Flooring Installation", "Floor Coating Removal", "Seale
 				background-color: var(--clr-highlight);
 			}
 			.contact-cta {
-				margin-top: 1rem;
+				/* margin-top: 1rem; */
 			}
 			.brand-section h1 {
 				color: var(--clr-highlight);
@@ -96,20 +129,18 @@ const services = ["Epoxy Flooring Installation", "Floor Coating Removal", "Seale
 		<section class="hero" id="home-hero">
 				<div class="image-container">
 				</div>
-				<h1>Concrete Solutions
+				<button class="schedule-cta">
+					<a href="tel:+2146610781">
+						<i class="fa-solid fa-calendar-days" 
+						style="color: var(--clr-light); display: block;">
+						</i>
+						Schedule a Consultation
+					</a>
+				</button>
+				<h1 class="tagline">Concrete Solutions
 					<span class="highlight">Shaped to Your Needs.
 					</span>
 				</h1>
-			</section>
-			<section class="contact-sect">
-					<button class="schedule-cta">
-						<a href="tel:+2146610781">
-							<i class="fa-solid fa-calendar-days" 
-							style="color: var(--clr-light); display: block;">
-							</i>
-							Schedule a Consultation
-						</a>
-					</button>
 				<div class="contact-cta">
 					<h3>
 						<a href="tel:+12146610781">
