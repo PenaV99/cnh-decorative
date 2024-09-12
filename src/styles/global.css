@@ -95,7 +95,7 @@ body {
     color: var(--clr-light);
     max-width: 100vw;
     text-align: center;
-    /* border: .5rem solid var(--clr-background); */
+    text-wrap: balance;
 }
 h1 {
     font-size: var(--fs-h1);
