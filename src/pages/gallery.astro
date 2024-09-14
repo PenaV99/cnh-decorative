@@ -1,103 +1,150 @@
 ---
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
-import Typography from '../components/Typography.astro';
-import Footer from '../components/Footer.astro';
-import Icons from '../components/Icons.astro';
-import '../styles/global.css';
-const caseStudies = ["Bar Countertop","Concrete Floor","& More"]
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Typography from "../components/Typography.astro";
+import Footer from "../components/Footer.astro";
+import Icons from "../components/Icons.astro";
+import "../styles/global.css";
+const caseStudies = ["Bar Countertop", "Concrete Floor", "& More"];
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Typography />
-    <Icons />
-    <title>Gallery</title>
-    <style>
-         .showcase-section {
-            padding: .5em;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 100%;
-        }
-        .showcase-heading {
-            font-family: var(--ff-secondary);
-            text-transform: capitalize;
-        }
-        .showcase__bar-top, .showcase__scraped-floor, .showcase__extra {
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            gap: .5em;
-            justify-content: center;
-            align-content: center;
-            width: 100%;
-            max-width: 100%;
-        }
-        .showcase__extra {
-            grid-template-rows: auto auto auto;
-        }
-        img {
-            width: 45vw;
-            height: 15em;
-            object-fit: cover;
-            border-radius: .3em;
-            box-shadow: 0px 0px 1px var(--clr-light);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <Header />
-    </header>
-    <nav class="nav-bar" id="nav-bar">
-        <Navigation />
-    </nav>
-    <h1 class="page-heading">Surfaces We've Transformed</h1>
 
-    <section class="showcase-section">
-        <div class="showcase">
-            <h2 class="showcase-heading">
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YW32M1YBE1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-YW32M1YBE1");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <Typography />
+        <Icons />
+        <title>Gallery</title>
+        <style>
+            .showcase-section {
+                padding: 0.5em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 100%;
+            }
+            .showcase-heading {
+                font-family: var(--ff-secondary);
+                text-transform: capitalize;
+            }
+            .showcase__bar-top,
+            .showcase__scraped-floor,
+            .showcase__extra {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                gap: 0.5em;
+                justify-content: center;
+                align-content: center;
+                width: 100%;
+                max-width: 100%;
+            }
+            .showcase__extra {
+                grid-template-rows: auto auto auto;
+            }
+            img {
+                width: 45vw;
+                height: 15em;
+                object-fit: cover;
+                border-radius: 0.3em;
+                box-shadow: 0px 0px 1px var(--clr-light);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <Header />
+        </header>
+        <nav class="nav-bar" id="nav-bar">
+            <Navigation />
+        </nav>
+        <h1 class="page-heading">Surfaces We've Transformed</h1>
+
+        <section class="showcase-section">
+            <div class="showcase">
+                <h2 class="showcase-heading">
                     {caseStudies[0]}
-            </h2>
-            <div class="showcase__bar-top">
-                <div class="showcase-images"><img src="/barcounter-before.png" alt=""></div>
-                <div class="showcase-images"><img src="/barcounter-before2.png" alt=""></div>
-                <div class="showcase-images"><img src="/barcounter-after3.png" alt=""></div>
-                <div class="showcase-images"><img src="/barcounter-after-right.png" alt=""></div>
-            </div>
-            <h2 class="showcase-heading">
+                </h2>
+                <div class="showcase__bar-top">
+                    <div class="showcase-images">
+                        <img src="/barcounter-before.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/barcounter-before2.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/barcounter-after3.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/barcounter-after-right.png" alt="" />
+                    </div>
+                </div>
+                <h2 class="showcase-heading">
                     {caseStudies[1]}
-            </h2>
-            <div class="showcase__scraped-floor">
-                <div class="showcase-images"><img src="/scraped-floor.png" alt=""></div>
-                <div class="showcase-images"><img src="/scraped-floor2.png" alt=""></div>
-                <div class="showcase-images"><img src="/scraped-floor-after4.png" alt=""></div>
-                <div class="showcase-images"><img src="/scraped-floor-after.png" alt=""></div>
+                </h2>
+                <div class="showcase__scraped-floor">
+                    <div class="showcase-images">
+                        <img src="/scraped-floor.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/scraped-floor2.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/scraped-floor-after4.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/scraped-floor-after.png" alt="" />
+                    </div>
+                </div>
+                <h2 class="showcase-heading">
+                    {caseStudies[2]}
+                </h2>
+                <div class="showcase__extra">
+                    <div class="showcase-images">
+                        <img src="/corner-room-concrete.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/black-granite-gray.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/dhc-job.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/gray-concrete.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/warehouse-concrete2.png" alt="" />
+                    </div>
+                    <div class="showcase-images">
+                        <img src="/stairs-shiny.png" alt="" />
+                    </div>
+                </div>
             </div>
-            <h2 class="showcase-heading">
-                {caseStudies[2]}
-            </h2>
-            <div class="showcase__extra">
-                <div class="showcase-images"><img src="/corner-room-concrete.png" alt=""></div>
-                <div class="showcase-images"><img src="/black-granite-gray.png" alt="" ></div>
-                <div class="showcase-images"><img src="/dhc-job.png" alt=""></div>
-                <div class="showcase-images"><img src="/gray-concrete.png" alt=""></div>
-                <div class="showcase-images"><img src="/warehouse-concrete2.png" alt="" ></div>
-                <div class="showcase-images"><img src="/stairs-shiny.png" alt="" ></div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <button id="scrollToTopBtn" class="scroll-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
-        <Footer />
-    </footer>
-    <script>
-        import "../scripts/scroll.js"
-        import "../scripts/menu.js"
-    </script>
-</body>
+        </section>
+        <footer>
+            <button id="scrollToTopBtn" class="scroll-to-top-btn"
+                ><i class="fa-solid fa-arrow-up"></i></button
+            >
+            <Footer />
+        </footer>
+        <script>
+            import "../scripts/scroll.js";
+            import "../scripts/menu.js";
+        </script>
+    </body>
 </html>

@@ -1,67 +1,81 @@
 ---
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
-import Typography from '../components/Typography.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-import Icons from '../components/Icons.astro';
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Typography from "../components/Typography.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import Icons from "../components/Icons.astro";
 ---
-<!DOCTYPE html> 
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content={Astro.generator} />
-    <Typography />
-    <Icons />
-    <title>Services</title>
-    <style>
-        .services-heading {
-            background-color: var(--clr-highlight);
-            border-bottom: .1em solid var(--clr-accent);
-        }
-       .services-display {
-            text-align: left;
-            font-family: var(--ff-secondary);
-        }
-        .accordion-header {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: var(--clr-dark);
-            padding: 2em;
-            cursor: pointer;
-        }
-        .accordion-header > button {
-            font-size: 3rem;
-        }
-        .accordion-header:hover {
-            background-color: #888;
-            
-        }
-        .accordion-body {
-            padding: 1em;
-            color: var(--clr-dark);
-            background-color: var(--clr-light);
-            display: none;
-        }
-        .accordion.open .accordion-body {
-            display: block;
-        }
-        img {
-            width: 90%;
-            height: 14em;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <Header />
-    </header>
-    <nav class="nav-bar" id="nav-bar">
-    <Navigation />
-    </nav>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YW32M1YBE1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-YW32M1YBE1");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <Typography />
+        <Icons />
+        <title>Services</title>
+        <style>
+            .services-heading {
+                background-color: var(--clr-highlight);
+                border-bottom: 0.1em solid var(--clr-accent);
+            }
+            .services-display {
+                text-align: left;
+                font-family: var(--ff-secondary);
+            }
+            .accordion-header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: var(--clr-dark);
+                padding: 2em;
+                cursor: pointer;
+            }
+            .accordion-header > button {
+                font-size: 3rem;
+            }
+            .accordion-header:hover {
+                background-color: #888;
+            }
+            .accordion-body {
+                padding: 1em;
+                color: var(--clr-dark);
+                background-color: var(--clr-light);
+                display: none;
+            }
+            .accordion.open .accordion-body {
+                display: block;
+            }
+            img {
+                width: 90%;
+                height: 14em;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <Header />
+        </header>
+        <nav class="nav-bar" id="nav-bar">
+            <Navigation />
+        </nav>
         <h1 class="page-heading">Commercial & Residential</h1>
         <div class="services-display">
             <div class="epoxy-flooring accordion">
@@ -70,7 +84,15 @@ import Icons from '../components/Icons.astro';
                     <button><i class="fa-solid fa-caret-right"></i></button>
                 </div>
                 <div class="accordion-body">
-                    <p>Transform your space with our professional epoxy flooring installation. Perfect for both residential and commercial settings, epoxy flooring offers durability, ease of maintenance, and a sleek, modern finish. Our expert team ensures a seamless application that not only enhances the appearance of your floors but also provides a long-lasting, resistant surface to wear and tear.</p>
+                    <p>
+                        Transform your space with our professional epoxy
+                        flooring installation. Perfect for both residential and
+                        commercial settings, epoxy flooring offers durability,
+                        ease of maintenance, and a sleek, modern finish. Our
+                        expert team ensures a seamless application that not only
+                        enhances the appearance of your floors but also provides
+                        a long-lasting, resistant surface to wear and tear.
+                    </p>
                 </div>
             </div>
             <div class="floor-coating-removal accordion">
@@ -79,7 +101,15 @@ import Icons from '../components/Icons.astro';
                     <button><i class="fa-solid fa-caret-right"></i></button>
                 </div>
                 <div class="accordion-body">
-                    <p>If you're looking to update or replace your existing floor coatings, our floor coating removal service is here to help. We use advanced techniques and equipment to efficiently strip away old coatings, preparing your surface for a fresh, new look. Our process minimizes disruption and ensures your new flooring will adhere perfectly to a clean, smooth base.</p>
+                    <p>
+                        If you're looking to update or replace your existing
+                        floor coatings, our floor coating removal service is
+                        here to help. We use advanced techniques and equipment
+                        to efficiently strip away old coatings, preparing your
+                        surface for a fresh, new look. Our process minimizes
+                        disruption and ensures your new flooring will adhere
+                        perfectly to a clean, smooth base.
+                    </p>
                 </div>
             </div>
             <div class="sealed-concrete accordion">
@@ -88,7 +118,15 @@ import Icons from '../components/Icons.astro';
                     <button><i class="fa-solid fa-caret-right"></i></button>
                 </div>
                 <div class="accordion-body">
-                    <p>Enhance the longevity and aesthetics of your concrete surfaces with our sealed concrete service. Sealing protects against stains, moisture, and wear while bringing out the natural beauty of the concrete. Ideal for both interior and exterior applications, our sealing solutions provide a protective barrier that keeps your concrete looking pristine for years to come.</p>
+                    <p>
+                        Enhance the longevity and aesthetics of your concrete
+                        surfaces with our sealed concrete service. Sealing
+                        protects against stains, moisture, and wear while
+                        bringing out the natural beauty of the concrete. Ideal
+                        for both interior and exterior applications, our sealing
+                        solutions provide a protective barrier that keeps your
+                        concrete looking pristine for years to come.
+                    </p>
                 </div>
             </div>
             <div class="polyurea-joint-filler accordion">
@@ -97,28 +135,47 @@ import Icons from '../components/Icons.astro';
                     <button><i class="fa-solid fa-caret-right"></i></button>
                 </div>
                 <div class="accordion-body">
-                    <p>Ensure the durability and integrity of your flooring with our polyurea joint filler. Designed to fill and seal joints in concrete surfaces, polyurea offers superior flexibility, adhesion, and resistance to environmental factors. This service is crucial for preventing cracks and damage, ensuring a smooth and long-lasting floor.</p>
+                    <p>
+                        Ensure the durability and integrity of your flooring
+                        with our polyurea joint filler. Designed to fill and
+                        seal joints in concrete surfaces, polyurea offers
+                        superior flexibility, adhesion, and resistance to
+                        environmental factors. This service is crucial for
+                        preventing cracks and damage, ensuring a smooth and
+                        long-lasting floor.
+                    </p>
                 </div>
             </div>
             <div class="concrete-staining accordion">
                 <div class="accordion-header">
-                    <h1>Concrete Staining</h1> 
+                    <h1>Concrete Staining</h1>
                     <button><i class="fa-solid fa-caret-right"></i></button>
                 </div>
                 <div class="accordion-body">
-                    <p>Add a touch of elegance and color to your concrete surfaces with our concrete staining service. Available in a variety of shades and finishes, staining can enhance the look of both new and existing concrete, creating a unique, high-end appearance. Our expert team applies stains with precision to achieve the desired effect, transforming your space with a vibrant and durable finish.</p>
+                    <p>
+                        Add a touch of elegance and color to your concrete
+                        surfaces with our concrete staining service. Available
+                        in a variety of shades and finishes, staining can
+                        enhance the look of both new and existing concrete,
+                        creating a unique, high-end appearance. Our expert team
+                        applies stains with precision to achieve the desired
+                        effect, transforming your space with a vibrant and
+                        durable finish.
+                    </p>
                 </div>
             </div>
         </div>
-        <img src="/washing-floor.png" alt="Washing floor">
+        <img src="/washing-floor.png" alt="Washing floor" />
         <footer>
-            <button id="scrollToTopBtn" class="scroll-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="scrollToTopBtn" class="scroll-to-top-btn"
+                ><i class="fa-solid fa-arrow-up"></i></button
+            >
             <Footer />
         </footer>
         <script>
-            import "../scripts/menu.js"
-            import "../scripts/accordion.js"
-            import "../scripts/scroll.js"
+            import "../scripts/menu.js";
+            import "../scripts/accordion.js";
+            import "../scripts/scroll.js";
         </script>
-</body>
+    </body>
 </html>

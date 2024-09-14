@@ -1,229 +1,292 @@
 ---
-import { ACTION_ERROR_CODES } from 'astro:actions';
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
-import Typography from '../components/Typography.astro';
-import Footer from '../components/Footer.astro';
-import Icons from '../components/Icons.astro';
-const services = ["Epoxy Flooring Installation", "Floor Coating Removal", "Sealed Concrete", "Polyurea Joint Filler", "Concrete Staining", "Concrete Polishing"]
+import { ACTION_ERROR_CODES } from "astro:actions";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Typography from "../components/Typography.astro";
+import Footer from "../components/Footer.astro";
+import Icons from "../components/Icons.astro";
+const services = [
+    "Epoxy Flooring Installation",
+    "Floor Coating Removal",
+    "Sealed Concrete",
+    "Polyurea Joint Filler",
+    "Concrete Staining",
+    "Concrete Polishing",
+];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>CNH Construction</title>
-		<Typography />
-		<Icons />
-		<style>
-			.hero {
-				display: flex;
-				flex-flow: column wrap;
-			}
-			.image-container {
-				background-image: url("/hero.jpg");
-				background-position: bottom;
-				background-repeat: no-repeat;
-				background-size:cover;
-				max-width: 100%;
-				height: 25em;
-			}
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YW32M1YBE1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-			@media (min-width: 1024px) {
-				.hero {
-					flex-wrap: wrap;
-					flex-direction: column;
-					background-image: url("/hero.jpg");
-					background-position: top;
-					background-size: cover;
-					background-repeat: no-repeat;
-				}
-				.image-container {
-					width: 50%;
-					order: 1;
-					opacity: 0%;
-				}
-				.tagline {
-					order: 3;
-				}
-				.schedule-cta {
-					order: 4;
-				}
-				.contact-cta {
-					background-color: var(--clr-dark);
-					order: 0;
-					display: flex;
-					justify-content: space-around;
-					padding: 0 1em;
-				}
-			}
-			.contact-sect {
-				font-weight: var(--fw-bold);
-				margin: .5em 0 2em;
-				padding: .2em;
-			}
-			.schedule-cta {
-				margin: .3em auto;
-				font-size: var(--fs-h1);
-				font-family: var(--ff-secondary);	
-				font-weight: 800;
-				border: 2px solid var(--clr-light);
-				border-radius: 6px;
-				padding: .2em;
-				background-color: var(--clr-highlight);
-			}
-			.brand-section h1 {
-				color: var(--clr-highlight);
-				text-align: center;
-			}
-			.brand-intro {
-				border-top: 1px solid var(--clr-light);
-				color: var(--clr-light);
-				text-align: left;
-			}
-			.brand-img {
-				width: 100%;
-				height: 20em;
-				object-fit: cover;
-				margin: 0 auto;
-				box-shadow: 0px 0px 0px #fff;
-				padding: .3em;
-			}
-			.link {
-				color: var(--clr-highlight);
-				text-decoration: underline;
-				display: block;
-				text-align: center;
-				margin: .2em auto;
-			}
-			.service {
-				font-size: var(--fs-h4);
-				text-align: left;
-				font-weight: 600;
-				padding: .3em
-       		}
-       		 .custom {
-            	color: #52b788;
-       		 }
-			.specialization-el {
-				border-top: 1px solid var(--clr-light);
-			}
-			 .mission-el {
-				border-top:1px solid var(--clr-light) ;
-			 }
-			 @media (min-width: 1024px) {
-				.brand-intro, .specialization-el, .service {
-					text-align: center;
-				}
-				.brand-img {
-					height: 100%;
-					width: 50%;
-					margin: 0 auto;
-					display: block;
-				}
-			 }
-			</style>
-	</head>
-	<body>
-		<header>
-			<Header />
-		</header>
-			<nav class="nav-bar" id="nav-bar">
-				<Navigation />
-			</nav>
-		<main>
-		<section class="hero" id="home-hero">
-				<div class="image-container">
-				</div>
-				<button class="schedule-cta">
-					<a href="tel:+2146610781">
-						<i class="fa-solid fa-calendar-days" 
-						style="color: var(--clr-light); display: block;">
-						</i>
-						Schedule a Consultation
-					</a>
-				</button>
-				<h1 class="tagline">Concrete Solutions
-					<span class="highlight">Shaped to Your Needs.
-					</span>
-				</h1>
-				<div class="contact-cta">
-					<h3>
-						<a href="tel:+12146610781">
-							<i class="fa-solid fa-phone" style="color: var(--clr-light);"></i>
-							(214) 661-0781
-						</a>
-					</h3>
-					<h4>
-						<a href="mailto:cnhdecorative@gmail.com" target="_blank">cnhdecorative@gmail.com</a>
-					</h4>
-				</div>
-			</section>
-			<section class="brand-section">
-				<div class="brand-intro">
-					<div class="about-us-el">
-						<h1>About Us</h1>
-						<p>
-							CNH Decorative Concrete is a leading provider of decorative concrete solutions based in Arlington, TX.
-						</p>
-						<img
-						 src="/arlington-globe-life.jpg" alt="Arlington Texas Rangers Stadium" class="brand-img"
-						 >
-						 <h3><a href="/about/" class="link">With 10+ years of experience</a></h3>
-						 <p>
-							and a commitment to quality, we've earned a reputation for excellence in the DFW and surrounding areas.
-						 </p>
-					</div>
-					<div class="specialization-el">
-						<h1>Transforming Surfaces</h1>
-						<p>We specialize in transforming concrete surfaces with a range of innovative treatments.</p>
-						<img src="/epoxy-floor.jpg" alt="Men polishing floor" class="brand-img">
-						<h3>
-							<a href="/services/" class="link">Our services include</a>
-						</h3>
-						<ul class="services-list">
-							<li class="service">
-								<i class="fa-solid fa-check-square custom"></i> 
-								{services[0]}</li>
-							<li class="service">
-								<i class="fa-solid fa-check-square custom"></i> 
-								{services[1]}</li>
-							<li class="service">
-								<i class="fa-solid fa-check-square custom"></i> 
-								{services[2]}</li>
-							<li class="service">
-								<i class="fa-solid fa-check-square custom"></i> 
-								{services[3]}</li>
-							<li class="service">
-								<i class="fa-solid fa-check-square custom"></i> 
-								{services[4]}</li>
-							<li class="service">
-								<i class="fa-solid fa-check-square custom"></i> 
-								{services[5]}</li>
-						</ul>
-					</div>
-					<div class="mission-el">
-					<h1>Our Mission</h1>
-					<p>
-						At CNH, we're committed to delivering top-quality decorative concrete solutions at competitive prices. 
-					</p>
-					<img src="sanding-epoxy.jpg" alt="Young man sanding epoxy" class="brand-img">
-					<p>
-						Our dedication to customer satisfaction has been the cornerstone of our success. Contact us today to learn more about our stained and polished concrete options, as well as our other comprehensive services.
-					</p>
-				</div>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<button id="scrollToTopBtn" class="scroll-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
-			<Footer />
-		</footer>
-		<script>
-			import "../scripts/menu.js"
-			import "../scripts/scroll.js"
-		</script>
-	</body>
+            gtag("config", "G-YW32M1YBE1");
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>CNH Construction</title>
+        <Typography />
+        <Icons />
+        <style>
+            .hero {
+                display: flex;
+                flex-flow: column wrap;
+            }
+            .image-container {
+                background-image: url("/hero.jpg");
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                max-width: 100%;
+                height: 25em;
+            }
+
+            @media (min-width: 1024px) {
+                .hero {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    background-image: url("/hero.jpg");
+                    background-position: top;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .image-container {
+                    width: 50%;
+                    order: 1;
+                    opacity: 0%;
+                }
+                .tagline {
+                    order: 3;
+                }
+                .schedule-cta {
+                    order: 4;
+                }
+                .contact-cta {
+                    background-color: var(--clr-dark);
+                    order: 0;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0 1em;
+                }
+            }
+            .contact-sect {
+                font-weight: var(--fw-bold);
+                margin: 0.5em 0 2em;
+                padding: 0.2em;
+            }
+            .schedule-cta {
+                margin: 0.3em auto;
+                font-size: var(--fs-h1);
+                font-family: var(--ff-secondary);
+                font-weight: 800;
+                border: 2px solid var(--clr-light);
+                border-radius: 6px;
+                padding: 0.2em;
+                background-color: var(--clr-highlight);
+            }
+            .brand-section h1 {
+                color: var(--clr-highlight);
+                text-align: center;
+            }
+            .brand-intro {
+                border-top: 1px solid var(--clr-light);
+                color: var(--clr-light);
+                text-align: left;
+            }
+            .brand-img {
+                width: 100%;
+                height: 20em;
+                object-fit: cover;
+                margin: 0 auto;
+                box-shadow: 0px 0px 0px #fff;
+                padding: 0.3em;
+            }
+            .link {
+                color: var(--clr-highlight);
+                text-decoration: underline;
+                display: block;
+                text-align: center;
+                margin: 0.2em auto;
+            }
+            .service {
+                font-size: var(--fs-h4);
+                text-align: left;
+                font-weight: 600;
+                padding: 0.3em;
+            }
+            .custom {
+                color: #52b788;
+            }
+            .specialization-el {
+                border-top: 1px solid var(--clr-light);
+            }
+            .mission-el {
+                border-top: 1px solid var(--clr-light);
+            }
+            @media (min-width: 1024px) {
+                .brand-intro,
+                .specialization-el,
+                .service {
+                    text-align: center;
+                }
+                .brand-img {
+                    height: 100%;
+                    width: 50%;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <Header />
+        </header>
+        <nav class="nav-bar" id="nav-bar">
+            <Navigation />
+        </nav>
+        <main>
+            <section class="hero" id="home-hero">
+                <div class="image-container"></div>
+                <button class="schedule-cta">
+                    <a href="tel:+2146610781">
+                        <i
+                            class="fa-solid fa-calendar-days"
+                            style="color: var(--clr-light); display: block;"
+                        >
+                        </i>
+                        Schedule a Consultation
+                    </a>
+                </button>
+                <h1 class="tagline">
+                    Concrete Solutions
+                    <span class="highlight">Shaped to Your Needs. </span>
+                </h1>
+                <div class="contact-cta">
+                    <h3>
+                        <a href="tel:+12146610781">
+                            <i
+                                class="fa-solid fa-phone"
+                                style="color: var(--clr-light);"></i>
+                            (214) 661-0781
+                        </a>
+                    </h3>
+                    <h4>
+                        <a href="mailto:cnhdecorative@gmail.com" target="_blank"
+                            >cnhdecorative@gmail.com</a
+                        >
+                    </h4>
+                </div>
+            </section>
+            <section class="brand-section">
+                <div class="brand-intro">
+                    <div class="about-us-el">
+                        <h1>About Us</h1>
+                        <p>
+                            CNH Decorative Concrete is a leading provider of
+                            decorative concrete solutions based in Arlington,
+                            TX.
+                        </p>
+                        <img
+                            src="/arlington-globe-life.jpg"
+                            alt="Arlington Texas Rangers Stadium"
+                            class="brand-img"
+                        />
+                        <h3>
+                            <a href="/about/" class="link"
+                                >With 10+ years of experience</a>
+                        </h3>
+                        <p>
+                            and a commitment to quality, we've earned a
+                            reputation for excellence in the DFW and surrounding
+                            areas.
+                        </p>
+                    </div>
+                    <div class="specialization-el">
+                        <h1>Transforming Surfaces</h1>
+                        <p>
+                            We specialize in transforming concrete surfaces with
+                            a range of innovative treatments.
+                        </p>
+                        <img
+                            src="/epoxy-floor.jpg"
+                            alt="Men polishing floor"
+                            class="brand-img"
+                        />
+                        <h3>
+                            <a href="/services/" class="link"
+                                >Our services include</a
+                            >
+                        </h3>
+                        <ul class="services-list">
+                            <li class="service">
+                                <i class="fa-solid fa-check-square custom"></i>
+                                {services[0]}
+                            </li>
+                            <li class="service">
+                                <i class="fa-solid fa-check-square custom"></i>
+                                {services[1]}
+                            </li>
+                            <li class="service">
+                                <i class="fa-solid fa-check-square custom"></i>
+                                {services[2]}
+                            </li>
+                            <li class="service">
+                                <i class="fa-solid fa-check-square custom"></i>
+                                {services[3]}
+                            </li>
+                            <li class="service">
+                                <i class="fa-solid fa-check-square custom"></i>
+                                {services[4]}
+                            </li>
+                            <li class="service">
+                                <i class="fa-solid fa-check-square custom"></i>
+                                {services[5]}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mission-el">
+                        <h1>Our Mission</h1>
+                        <p>
+                            At CNH, we're committed to delivering top-quality
+                            decorative concrete solutions at competitive prices.
+                        </p>
+                        <img
+                            src="sanding-epoxy.jpg"
+                            alt="Young man sanding epoxy"
+                            class="brand-img"
+                        />
+                        <p>
+                            Our dedication to customer satisfaction has been the
+                            cornerstone of our success. Contact us today to
+                            learn more about our stained and polished concrete
+                            options, as well as our other comprehensive
+                            services.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <button id="scrollToTopBtn" class="scroll-to-top-btn"
+                ><i class="fa-solid fa-arrow-up"></i></button
+            >
+            <Footer />
+        </footer>
+        <script>
+            import "../scripts/menu.js";
+            import "../scripts/scroll.js";
+        </script>
+    </body>
 </html>

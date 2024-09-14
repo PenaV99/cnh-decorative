@@ -1,33 +1,48 @@
 ---
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
-import Typography from '../components/Typography.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-import Icons from '../components/Icons.astro';
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Typography from "../components/Typography.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import Icons from "../components/Icons.astro";
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Typography />
-    <Icons />
-    <title>Contact</title>
-</head>
-<body>
-    <header>
-        <Header />
-    </header>
-    <nav class="nav-bar" id="nav-bar">
-        <Navigation />
-    </nav>
-    <h1>Get in touch with us</h1>
-    <footer>
-        <Footer />
-    </footer>
-<script>
-    import "../scripts/menu.js";
-</script>
-</body>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YW32M1YBE1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-YW32M1YBE1");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <Typography />
+        <Icons />
+        <title>Contact</title>
+    </head>
+    <body>
+        <header>
+            <Header />
+        </header>
+        <nav class="nav-bar" id="nav-bar">
+            <Navigation />
+        </nav>
+        <h1>Get in touch with us</h1>
+        <footer>
+            <Footer />
+        </footer>
+        <script>
+            import "../scripts/menu.js";
+        </script>
+    </body>
 </html>
